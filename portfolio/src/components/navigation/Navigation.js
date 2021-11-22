@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Section } from "../styles/GlobalStyles";
 import {
   NavContainer,
@@ -6,9 +6,18 @@ import {
   LogoContainer,
   NavLink,
   Logo,
+  SidebarContainer,
+  Menu,
+  Close,
 } from "./NavigationElements";
 
 const Navigation = () => {
+  const [isOpened, setIsOpened] = useState(false);
+
+  const handleMenu = () => {
+    setIsOpened(!isOpened);
+  };
+
   return (
     <>
       <Section>
@@ -21,6 +30,13 @@ const Navigation = () => {
             <NavLink>Portfolio</NavLink>
             <NavLink>Contact</NavLink>
           </LinksContainer>
+          <SidebarContainer>
+            {!isOpened ? (
+              <Menu onClick={handleMenu} />
+            ) : (
+              <Close onClick={handleMenu} />
+            )}
+          </SidebarContainer>
         </NavContainer>
       </Section>
     </>
