@@ -15,7 +15,8 @@ export const LinksContainer = styled.div.attrs({
 })``;
 
 export const NavLink = styled.p.attrs({
-  className: "text-medium-champagne cursor-pointer px-5",
+  className:
+    "text-medium-champagne cursor-pointer px-5 transition duration-200 ease-in-out hover:text-middleblue-green ",
 })``;
 
 export const Logo = styled.h1.attrs({

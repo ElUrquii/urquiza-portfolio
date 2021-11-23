@@ -10,6 +10,7 @@ import {
   Menu,
   Close,
 } from "./NavigationElements";
+import MobileNav from "./MobileNav";
 
 const Navigation = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -38,6 +39,7 @@ const Navigation = () => {
             )}
           </SidebarContainer>
         </NavContainer>
+        {isOpened && <MobileNav />}
       </Section>
     </>
   );
