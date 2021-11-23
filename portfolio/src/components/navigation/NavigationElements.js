@@ -3,7 +3,7 @@ import { FaIoxhost, FaGg } from "react-icons/fa";
 
 // border-b-2 border-medium-champagne rounded-sm
 export const NavContainer = styled.div.attrs({
-  className: "grid grid-cols-2  sticky px-3 py-3",
+  className: "grid grid-cols-2  sticky px-3 py-5",
 })``;
 
 export const LogoContainer = styled.div.attrs({

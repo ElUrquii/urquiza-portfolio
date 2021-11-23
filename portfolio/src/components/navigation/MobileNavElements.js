@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MobileContainer = styled.div.attrs({
-  className: "flex flex-col pt-3 h-full",
+  className: "flex flex-col pt-3 h-full md:hidden",
 })`
   transition: all 0.5 ease-in-out;
 `;
