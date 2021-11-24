@@ -1,12 +1,12 @@
 import React from "react";
-import { Section } from "../styles/GlobalStyles";
+import { HeroSection } from "./HeroElements";
 
 const Hero = () => {
   return (
     <>
-      <Section>
+      <HeroSection>
         <h1>Hero Section</h1>
-      </Section>
+      </HeroSection>
     </>
   );
 };

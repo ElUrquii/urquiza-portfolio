@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { animated } from "react-spring";
 
-export const MobileContainer = styled.div.attrs({
+export const MobileContainer = styled(animated.div).attrs({
   className: "flex flex-col pt-3 h-full md:hidden",
 })`
   transition: all 0.5 ease-in-out;

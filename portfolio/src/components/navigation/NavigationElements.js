@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { FaIoxhost, FaGg } from "react-icons/fa";
+import { animated } from "react-spring";
 
 // border-b-2 border-medium-champagne rounded-sm
-export const NavContainer = styled.div.attrs({
+export const NavContainer = styled(animated.div).attrs({
   className: "grid grid-cols-2  sticky px-3 py-5",
 })``;
 

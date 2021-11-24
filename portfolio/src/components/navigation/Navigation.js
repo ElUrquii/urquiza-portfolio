@@ -11,9 +11,12 @@ import {
   Close,
 } from "./NavigationElements";
 import MobileNav from "./MobileNav";
+import { useSpring } from "react-spring";
 
 const Navigation = () => {
   const [isOpened, setIsOpened] = useState(false);
+
+  const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } });
 
   const handleMenu = () => {
     setIsOpened(!isOpened);
@@ -22,7 +25,7 @@ const Navigation = () => {
   return (
     <>
       <Section>
-        <NavContainer>
+        <NavContainer style={props}>
           <LogoContainer>
             <Logo>Portfolio</Logo>
           </LogoContainer>

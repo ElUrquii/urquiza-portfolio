@@ -5,12 +5,15 @@ import {
   MobileLink,
   MobileLinkContainer,
 } from "./MobileNavElements";
+import { useSpring } from "react-spring";
 
 const MobileNav = () => {
+  const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } });
+
   return (
     <>
       <Section>
-        <MobileContainer>
+        <MobileContainer style={props}>
           <MobileLinkContainer>
             <MobileLink>About</MobileLink>
           </MobileLinkContainer>
